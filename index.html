@@ -26,7 +26,8 @@
                 <h1>Aprende el Arte de Crear.</h1>
                 <p>Especialízate en Marketing Digital, Diseño Gráfico y Taller de Moda con nuestra metodología creativa y personalizada.</p>
                 <button onclick="document.getElementById('cursos-section').scrollIntoView({behavior:'smooth'})" class="btn">Explorar Cursos</button>
-                <div style="margin-top: 20px;">
+                <div class="audio-hero">
+                    <p>Made in Japan</p>
                     <audio controls src="Made In Japan.mp3"></audio>
                 </div>
             </div>
@@ -35,9 +36,13 @@
             </div>
         </section>
 
-        <div style="text-align: center; padding: 2rem;">
-            <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" style="width: 250px; border-radius: 15px; box-shadow: 10px 10px 0 var(--blush);">
-            <p style="margin-top: 10px; font-style: italic;">Inspiración en cada detalle</p>
+        <div class="video-disperso-container">
+            <h3>Robert Pattinson Concept</h3>
+            <video controls class="video-estetico">
+                <source src="Robert Pattinson - LUXURY Azealia Banks.mp3" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" class="img-mini-float">
         </div>
 
         <div id="cursos-section">
@@ -47,7 +52,6 @@
                     <div class="course-img" style="background-image: url('Logo _ Packaging for iced tea __ Behance.jpg')"></div>
                     <div class="course-info">
                         <h3>Marketing Digital</h3>
-                        <p>Domina las redes sociales y el branding para destacar en el mundo online.</p>
                         <button onclick="openEnroll('Marketing Digital')" class="btn" style="width: 100%; margin-top: 1rem;">Inscribirme</button>
                     </div>
                 </div>
@@ -55,7 +59,6 @@
                     <div class="course-img" style="background-image: url('Courtside Tennis Club.jpg')"></div>
                     <div class="course-info">
                         <h3>Diseño Gráfico</h3>
-                        <p>Aprende tipografías elegantes y paletas de colores armónicas.</p>
                         <button onclick="openEnroll('Diseño Gráfico')" class="btn" style="width: 100%; margin-top: 1rem;">Inscribirme</button>
                     </div>
                 </div>
@@ -66,26 +69,28 @@
             <h2 class="section-title">Planes y Precios</h2>
             <table>
                 <thead>
-                    <tr><th>Beneficio</th><th>Básico</th><th>Premium</th><th>VIP</th></tr>
+                    <tr><th>Beneficio</th><th>Básico</th><th>Premium</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Acceso</td><td>Grabadas</td><td>En Vivo</td><td>Personalizado</td></tr>
-                    <tr><td class="price-tag">Inversión</td><td class="price-tag">$49</td><td class="price-tag">$99</td><td class="price-tag">$199</td></tr>
+                    <tr><td>Acceso</td><td>Grabadas</td><td>En Vivo</td></tr>
+                    <tr><td class="price-tag">Inversión</td><td class="price-tag">$49</td><td class="price-tag">$99</td></tr>
                 </tbody>
             </table>
 
-            <div style="display: flex; justify-content: center; margin-top: 40px;">
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@linkitox/video/7591754386238459158" data-video-id="7591754386238459158" style="max-width: 605px; min-width: 325px;">
+            <div class="tiktok-section">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@linkitox/video/7591754386238459158" data-video-id="7591754386238459158">
                     <section></section>
                 </blockquote>
                 <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
         </div>
 
-        <div style="padding: 3rem; text-align: center;">
-            <p>Siente el ritmo de la creación:</p>
-            <audio controls src="Robert Pattinson - LUXURY Azealia Banks.mp3" style="margin: 10px;"></audio>
-            <audio controls src="Britney Manson - FSHION Single 2023.mp3" style="margin: 10px;"></audio>
+        <div class="video-disperso-container" style="background-color: var(--blush);">
+            <h2 class="section-title">Fashion Vibes</h2>
+            <video controls class="video-estetico">
+                <source src="Britney Manson - FSHION Single 2023.mp3" type="video/mp4">
+            </video>
+            <p style="margin-top: 20px;">Inspiración para tu Taller de Moda</p>
         </div>
     </main>
 
@@ -108,7 +113,7 @@
                 </div>
                 <div class="lesson-list">
                     <h3>Contenido</h3>
-                    <div class="lesson-item" onclick="setLesson('Introducción')"><span>✅</span> 1. Introducción</div>
+                    <div class="lesson-item"><span>✅</span> 1. Introducción</div>
                 </div>
             </div>
         </div>
@@ -122,13 +127,12 @@
                 <input type="email" placeholder="Email" required>
                 <button type="submit" class="btn" style="width: 100%;">Confirmar e Ir al Curso</button>
             </form>
-            <button onclick="closeEnroll()" style="background:none; border:none; color:#999; cursor:pointer; margin-top:15px; width:100%; text-decoration:underline;">Volver</button>
+            <button onclick="closeEnroll()" class="btn-link">Volver</button>
         </div>
     </div>
 
     <footer>
         <p>Academia Creativa Mari &copy; 2026</p>
-        <audio controls src="There Is a Light That Never Goes Out 2011 Remaster.mp3" style="margin-top: 20px; filter: invert(1);"></audio>
     </footer>
 
     <script src="script.js"></script>
