@@ -1,7 +1,5 @@
 function showView(viewId) {
-    document.querySelectorAll('.page-view').forEach(view => {
-        view.classList.remove('active-view');
-    });
+    document.querySelectorAll('.page-view').forEach(view => view.classList.remove('active-view'));
     document.getElementById(viewId + '-view').classList.add('active-view');
     window.scrollTo(0,0);
 }
@@ -22,10 +20,6 @@ function finishEnroll(event) {
     closeEnroll();
     document.getElementById('nav-aula').style.display = 'inline-block';
     showView('dashboard');
-}
-
-function setLesson(title) {
-    document.getElementById('lesson-title').innerText = 'Lección: ' + title;
 }
 
 function toggleModulo(element) {
