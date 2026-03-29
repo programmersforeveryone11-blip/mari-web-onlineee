@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Mari - Academia Creativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a onclick="showView('home')" class="logo">Cursos de Mari</a>
+        <nav>
+            <a onclick="showView('home')">Inicio</a>
+            <a onclick="scrollToSection('cursos-section')">Cursos</a>
+            <a id="nav-aula" style="display:none;" onclick="showView('dashboard')">Mi Aula</a>
+        </nav>
+    </header>
+
+    <main id="home-view" class="page-view active-view">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Aprende el Arte de Crear.</h1>
+                <p>Especialízate en Marketing Digital, Diseño Gráfico y Taller de Moda.</p>
+                <button onclick="scrollToSection('cursos-section')" class="btn">Explorar Cursos</button>
+                <div class="audio-preview">
+                    <p>Escucha nuestra esencia:</p>
+                    <audio controls src="Made In Japan.mp3"></audio>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="lippies.jpg" alt="Lippies">
+            </div>
+        </section>
+
+        <div class="media-row">
+            <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" class="img-float" alt="Branding">
+            <div class="text-block">
+                <h3>Identidad Visual</h3>
+                <p>Creamos marcas que trascienden el tiempo.</p>
+                <audio controls src="Robert Pattinson - LUXURY Azealia Banks.mp3"></audio>
+            </div>
+        </div>
+
+        <div id="cursos-section">
+            <h2 class="section-title">Nuestra Oferta Académica</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('Logo _ Packaging for iced tea __ Behance.jpg')"></div>
+                    <div class="course-info">
+                        <h3>Marketing Digital</h3>
+                        <button onclick="openEnroll('Marketing Digital')" class="btn-full">Inscribirme</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('Courtside Tennis Club.jpg')"></div>
+                    <div class="course-info">
+                        <h3>Diseño Gráfico</h3>
+                        <button onclick="openEnroll('Diseño Gráfico')" class="btn-full">Inscribirme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-container">
+            <h2 class="section-title">Planes y Precios</h2>
+            <table>
+                <thead>
+                    <tr><th>Beneficio</th><th>Básico</th><th>Premium</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Acceso</td><td>Grabadas</td><td>En Vivo</td></tr>
+                    <tr><td class="price-tag">Inversión</td><td class="price-tag">$49</td><td class="price-tag">$99</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="tiktok-container">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@linkitox/video/7591754386238459158" data-video-id="7591754386238459158">
+                    <section></section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+        </div>
+
+        <section class="final-gallery">
+            <div class="gallery-item">
+                <audio controls src="Britney Manson - FSHION Single 2023.mp3"></audio>
+                <p>Fashion Vibes</p>
+            </div>
+            <div class="gallery-item">
+                <audio controls src="There Is a Light That Never Goes Out 2011 Remaster.mp3"></audio>
+                <p>Inspiración Nocturna</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <p>&copy; 2026 Academia Creativa Mari. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
