@@ -24,26 +24,29 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Aprende el Arte de Crear.</h1>
-                <p>Especialízate en Marketing Digital, Diseño Gráfico y Taller de Moda con nuestra metodología creativa y personalizada.</p>
+                <p>Especialízate en Marketing Digital, Diseño Gráfico y Taller de Moda con nuestra metodología creativa.</p>
                 <button onclick="document.getElementById('cursos-section').scrollIntoView({behavior:'smooth'})" class="btn">Explorar Cursos</button>
-                
-                <div style="margin-top: 25px;">
-                    <p style="font-size: 0.8rem; margin-bottom: 5px;">Listen: Made In Japan</p>
+                <div class="audio-box">
+                    <p>Made In Japan</p>
                     <audio controls src="Made In Japan.mp3"></audio>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="lippies.jpg" alt="Lippies">
+                <img src="lippies.jpg" alt="Lippies Principal">
             </div>
         </section>
 
-        <div class="video-container-section">
-            <h3>Luxury Concept - Robert Pattinson</h3>
-            <video controls class="video-item">
-                <source src="Robert Pattinson - LUXURY Azealia Banks.mp3" type="video/mp4">
-            </video>
-            <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" class="floating-img">
-        </div>
+        <section class="media-flex">
+            <div class="media-item">
+                <h3>Robert Pattinson Concept</h3>
+                <video controls class="video-web">
+                    <source src="Robert Pattinson - LUXURY Azealia Banks.mp3" type="video/mp4">
+                </video>
+            </div>
+            <div class="media-item">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@stylish_threads/video/7617584172650990869" data-video-id="7617584172650990869"> <section></section> </blockquote>
+            </div>
+        </section>
 
         <div id="cursos-section">
             <h2 class="section-title">Nuestra Oferta Académica</h2>
@@ -52,13 +55,18 @@
                     <div class="course-img" style="background-image: url('Logo _ Packaging for iced tea __ Behance.jpg')"></div>
                     <div class="course-info">
                         <h3>Marketing Digital</h3>
+                        <p>Domina las redes sociales y el branding para destacar en el mundo online con estrategias reales.</p>
                         <button onclick="openEnroll('Marketing Digital')" class="btn" style="width: 100%; margin-top: 1rem;">Inscribirme</button>
                     </div>
+                </div>
+                <div class="media-item tiktok-inline">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ellyricssss/video/7607055915556064530" data-video-id="7607055915556064530"> <section></section> </blockquote>
                 </div>
                 <div class="course-card">
                     <div class="course-img" style="background-image: url('Courtside Tennis Club.jpg')"></div>
                     <div class="course-info">
                         <h3>Diseño Gráfico</h3>
+                        <p>Aprende desde los fundamentos hasta piezas complejas con un estilo minimalista y profesional.</p>
                         <button onclick="openEnroll('Diseño Gráfico')" class="btn" style="width: 100%; margin-top: 1rem;">Inscribirme</button>
                     </div>
                 </div>
@@ -72,25 +80,27 @@
                     <tr><th>Beneficio</th><th>Básico</th><th>Premium</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Acceso</td><td>Grabadas</td><td>En Vivo</td></tr>
+                    <tr><td>Acceso</td><td>Clases Grabadas</td><td>Clases En Vivo</td></tr>
                     <tr><td class="price-tag">Inversión</td><td class="price-tag">$49</td><td class="price-tag">$99</td></tr>
                 </tbody>
             </table>
-
-            <div style="display: flex; justify-content: center; margin-top: 40px;">
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@linkitox/video/7591754386238459158" data-video-id="7591754386238459158">
-                    <section></section>
-                </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
+            <div class="tiktok-center">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itx._glxs/video/7602350981925440788" data-video-id="7602350981925440788"> <section></section> </blockquote>
             </div>
         </div>
 
-        <div class="video-container-section" style="background: var(--blush);">
-            <h3>Fashion Trends - Britney Manson</h3>
-            <video controls class="video-item">
-                <source src="Britney Manson - FSHION Single 2023.mp3" type="video/mp4">
-            </video>
-        </div>
+        <section class="media-flex">
+            <div class="media-item">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@kkiyt.t/video/7602901224677002503" data-video-id="7602901224677002503"> <section></section> </blockquote>
+            </div>
+            <div class="media-item">
+                <h3>Fashion Vibes</h3>
+                <video controls class="video-web">
+                    <source src="Britney Manson - FSHION Single 2023.mp3" type="video/mp4">
+                </video>
+                <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" class="floating-img">
+            </div>
+        </section>
     </main>
 
     <main id="dashboard-view" class="page-view">
@@ -105,14 +115,14 @@
                                 <span>Módulo 1: Fundamentos</span><span>+</span>
                             </div>
                             <div class="modulo-content">
-                                <div class="clase-item"><span>1.1 Bienvenida</span><span class="badge-duracion">05:00 min</span></div>
+                                <div class="clase-item"><span>1.1 Introducción</span><span class="badge">05:00 min</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="lesson-list">
-                    <h3>Contenido</h3>
-                    <div class="lesson-item"><span>✅</span> 1. Introducción</div>
+                    <h3>Tu Progreso</h3>
+                    <div class="lesson-item"><span>✅</span> 1. Clase Inicial</div>
                 </div>
             </div>
         </div>
@@ -124,7 +134,7 @@
             <form onsubmit="finishEnroll(event)">
                 <input type="text" id="user-name" placeholder="Tu Nombre Completo" required>
                 <input type="email" placeholder="Email" required>
-                <button type="submit" class="btn" style="width: 100%;">Confirmar e Ir al Curso</button>
+                <button type="submit" class="btn" style="width: 100%;">Acceder al Curso</button>
             </form>
             <button onclick="closeEnroll()" class="btn-close">Cerrar</button>
         </div>
@@ -134,6 +144,7 @@
         <p>Academia Creativa Mari &copy; 2026</p>
     </footer>
 
+    <script async src="https://www.tiktok.com/embed.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
