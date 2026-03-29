@@ -26,8 +26,9 @@
                 <h1>Aprende el Arte de Crear.</h1>
                 <p>Especialízate en Marketing Digital, Diseño Gráfico y Taller de Moda con nuestra metodología creativa y personalizada.</p>
                 <button onclick="document.getElementById('cursos-section').scrollIntoView({behavior:'smooth'})" class="btn">Explorar Cursos</button>
-                <div class="audio-hero">
-                    <p>Made in Japan</p>
+                
+                <div style="margin-top: 25px;">
+                    <p style="font-size: 0.8rem; margin-bottom: 5px;">Listen: Made In Japan</p>
                     <audio controls src="Made In Japan.mp3"></audio>
                 </div>
             </div>
@@ -36,13 +37,12 @@
             </div>
         </section>
 
-        <div class="video-disperso-container">
-            <h3>Robert Pattinson Concept</h3>
-            <video controls class="video-estetico">
+        <div class="video-container-section">
+            <h3>Luxury Concept - Robert Pattinson</h3>
+            <video controls class="video-item">
                 <source src="Robert Pattinson - LUXURY Azealia Banks.mp3" type="video/mp4">
-                Tu navegador no soporta el video.
             </video>
-            <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" class="img-mini-float">
+            <img src="Logo for The Grid Tennis Club - Ace Your Brand Identity.jpg" class="floating-img">
         </div>
 
         <div id="cursos-section">
@@ -77,7 +77,7 @@
                 </tbody>
             </table>
 
-            <div class="tiktok-section">
+            <div style="display: flex; justify-content: center; margin-top: 40px;">
                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@linkitox/video/7591754386238459158" data-video-id="7591754386238459158">
                     <section></section>
                 </blockquote>
@@ -85,12 +85,11 @@
             </div>
         </div>
 
-        <div class="video-disperso-container" style="background-color: var(--blush);">
-            <h2 class="section-title">Fashion Vibes</h2>
-            <video controls class="video-estetico">
+        <div class="video-container-section" style="background: var(--blush);">
+            <h3>Fashion Trends - Britney Manson</h3>
+            <video controls class="video-item">
                 <source src="Britney Manson - FSHION Single 2023.mp3" type="video/mp4">
             </video>
-            <p style="margin-top: 20px;">Inspiración para tu Taller de Moda</p>
         </div>
     </main>
 
@@ -106,7 +105,7 @@
                                 <span>Módulo 1: Fundamentos</span><span>+</span>
                             </div>
                             <div class="modulo-content">
-                                <div class="clase-item"><span>1.1 Introducción</span><span class="badge-duracion">05:00 min</span></div>
+                                <div class="clase-item"><span>1.1 Bienvenida</span><span class="badge-duracion">05:00 min</span></div>
                             </div>
                         </div>
                     </div>
@@ -127,7 +126,7 @@
                 <input type="email" placeholder="Email" required>
                 <button type="submit" class="btn" style="width: 100%;">Confirmar e Ir al Curso</button>
             </form>
-            <button onclick="closeEnroll()" class="btn-link">Volver</button>
+            <button onclick="closeEnroll()" class="btn-close">Cerrar</button>
         </div>
     </div>
 
